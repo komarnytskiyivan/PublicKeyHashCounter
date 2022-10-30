@@ -1,0 +1,29 @@
+.hashLineContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+  
+  .keyHash {
+    width: 70%;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .hashSum {
+    width: 20%;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .deleteButton {
+    width: 10%;
+  }
+  

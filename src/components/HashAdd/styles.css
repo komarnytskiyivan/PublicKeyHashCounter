@@ -1,0 +1,15 @@
+.hashAddContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+.hashInput {
+  width: 70%;
+}
+
+.submitButton {
+  width: 20%;
+}
