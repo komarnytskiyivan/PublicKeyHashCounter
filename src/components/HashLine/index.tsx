@@ -14,17 +14,12 @@ export const HashLine: FC<HashLineProps> = ({ hashWithSum: { keyHash, hashSum, h
 
     const dispatch = useAppDispatch()
 
-    const onRemove = (hashId: string) => () => {
-        console.log(hashId)
-        dispatch(removeHash({ hashId }))
-    }
-
     return (
         <div className='hashLineContainer'>
             <div className="keyHash">{keyHash}</div>
             <div className="hashSum">{hashSum}</div>
-            <button className='deleteButton'>
-                <FaTrash onClick={onRemove(hashId)} />
+            <button className='deleteButton' onClick={() => dispatch(removeHash({ hashId }))}>
+                <FaTrash />
             </button>
         </div>
     )

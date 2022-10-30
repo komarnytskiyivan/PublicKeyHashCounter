@@ -25,8 +25,6 @@ export const addHash = ({ keyHash }: Pick<IHashWithSum, 'keyHash'>): AppThunk =>
 export const removeHash = ({ hashId }: Pick<IHashWithSum, 'hashId'>): AppThunk => async (dispatch, getState) => {
     dispatch(setLoading(true))
 
-    console.log('thunk', hashId)
-
     const newHashesWithSums = selectHashesWithSums(getState()).filter(el => el.hashId !== hashId)
 
     dispatch(setHashesWithSums(newHashesWithSums))
